@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>stylesheet2</title>
+    </head>
+
+    
+
+    <style>
+
+        body { 
+                background-color: rgb(203, 70, 70); 
+        }
+        
+        .toptitle {
+            border: 1px solid rgb(203, 70, 70);
+
+            padding-bottom: 40px;
+        }
+
+        .toptitle h1{
+            padding: 10px 10px 0px 10px;
+            font-size: 50px;
+            color: white;
+            margin-bottom: 0px;
+        }
+
+        .toptitle p{
+            margin-left:10px;
+            font-size: 25px;
+            color: white;
+            margin-bottom: 0px;
+        }
+
+        .secondbox {
+
+            display: flex;
+            border: 1px solid white;
+            background-color: white;
+            padding: 0px 20px 0px 20px;
+            height: 275px;
+            margin-top: 0px;
+            
+        }
+
+        .secondbox h1{
+
+            color: rgb(203, 70, 70);
+
+        }
+
+        .secondbox h2{
+            margin-bottom: 0px;
+        }
+
+        .secondbox p{
+            margin-bottom: 0px;
+        }
+
+
+        ul{
+            list-style: none;
+            padding: 5px;
+        }
+
+        .Stylesheets ul li{
+
+            width: 150px;
+            border: 1px solid rgb(203, 70, 70);
+            border-radius: 15px;
+            background-color: rgb(203, 70, 70);
+            padding: 5px;
+            margin-bottom: 10px;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+
+        }
+
+        .Stylesheets ul li.active{
+
+            background-color: white;
+            color: rgb(203, 70, 70);
+        }
+
+        .sidebar{
+
+            height: 100px;
+            padding: 5px;
+            background-color: rgb(243, 206, 206);
+            margin-bottom: 0px;
+
+        }
+
+        .sidebar h3{
+
+            padding-left: 15px;
+
+            color:rgb(203, 70, 70);
+        }
+
+        .sidebar p{
+
+            padding: 0px 15px 0px 15px;
+            color:rgb(203, 70, 70);
+        }
+
+        .bottom h6{
+
+            margin-top: 10px;
+            padding: 0px 20px 0px 20px;
+            text-align: center;
+        }
+
+    </style>
+
+    <body>
+
+
+        <!-- title -->
+
+        <div class="toptitle">
+            <h1>Welcome to 박성준's Homepage (22200293)</h1>
+
+            <p>Use the menu to select different Stylesheets</p>
+        </div>
+
+        <!-- 2nd box-->
+
+        <div class="secondbox">
+
+            <div class="main_content">
+
+                <h1>Same Page Different Stylesheets</h1>
+
+                This is a demonstration of how different stylesheets can change the layout of your HTML page. You
+                    can change the layout of this page by selecting different stylesheets in the menu, or by selecting
+                    one of the following links:
+
+                <div class="aherf">
+                    <a href="./Stylesheet1.html">Stylesheet1</a>,
+                    <a href="./Stylesheet1.html">Stylesheet2</a>,
+                    <a href="./Stylesheet3.html">Stylesheet3</a>,
+                    <a href="./Stylesheet4.html">Stylesheet4</a>.
+                </div>        
+
+                <h2>No Styles</h2>
+
+                <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how
+                    the page looks like with no stylesheet:</p>
+
+                <div>
+
+                    <a href="./index.html">No Stylesheet</a>
+                    
+                </div>
+
+                    
+
+            </div>
+
+            <div class="Stylesheets">
+                <ul>
+                    <li>Stylesheet1</li>
+                    <li class="active">Stylesheet2</li>
+                    <li>Stylesheet3</li>
+                    <li>Stylesheet4</li>
+                    <li>No Stylesheet</li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+        <!-- side-bar -->
+
+        <div class="sidebar">
+
+            <h3> Side-Bar </h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                ut laoreet dolore magna aliquam erat volutpat.</p>
+            
+        </div>
+
+        <!-- bottom -->
+
+        <div class="bottom">
+
+            <h6>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</h6>
+        
+        </div>
+        
+    </body>
+
+</html>
+

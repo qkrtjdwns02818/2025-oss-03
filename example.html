@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>example</title>
+    </head>
+
+
+    <style>
+
+        body {
+            background-color: rgb(235, 236, 238);
+        }
+
+        .toptxt{
+
+            padding: 10px 300px 0px 300px;
+
+            text-align: center;
+
+            margin-bottom: 0px;
+
+        }
+
+        .toptxt span{
+
+            font-size: 19px;
+        }
+
+        .Mainpart{
+
+            display: flex;
+
+            margin-top: 0px;
+
+            padding: 40px 275px 0px 275px;
+        }
+
+        .name span{
+
+            margin-left: 250px;
+
+        }
+
+        .enternamebox {
+
+            display: flex;
+        }
+
+        .namebox1{
+
+            background-color: white;
+            border:1px solid lightgray;
+            border-radius: 5px;
+            height: 25px;
+            width: 275px;
+            padding-top: 5px;
+            margin-top: 5px;
+
+        }
+
+        .namebox2{
+
+            background-color: white;
+            border:1px solid lightgray;
+            border-radius: 5px;
+            height: 25px;
+            width: 275px;
+            margin-left: 47px;
+            padding-top: 5px;
+            margin-top: 5px;
+
+        }
+
+        .Unbox{
+
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            width: 600px;
+            height:25px;
+            padding-top: 5px;
+            background-color: white;
+            margin-bottom: 20px;
+            margin-top: 5px;
+
+        }
+
+        .Unbox span{
+
+            margin-left: 10px;
+            color: rgb(166, 160, 160)
+        }
+
+        .Un p{
+
+            margin-bottom: 0px;
+        }
+
+        .Emailbox {
+
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            width: 600px;
+            height:25px;
+            padding-top: 5px;
+            background-color: white;
+            margin-bottom: 20px;
+            margin-top: 5px;
+
+        }
+
+        .Emailbox span{
+
+            margin-bottom: 10px;
+            margin-top: 0px;
+            margin-left: 10px;
+            color: rgb(166, 160, 160)
+            
+        }
+
+      
+
+        .Addressbox{
+
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            width: 590px;
+            height:25px;
+            padding-top: 5px;
+            background-color: white;
+            margin-top: 5px;
+            color: rgb(166, 160, 160);
+            margin-bottom: 20px;
+            padding-left: 10px;
+
+        }
+
+        .Addressbox2{
+
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        width: 590px;
+        height:25px;
+        padding-top: 5px;
+        background-color: white;
+        margin-top: 0px;
+        color: rgb(166, 160, 160);
+        margin-bottom: 20px;
+        padding-left: 10px;
+
+        }
+
+        .CSZbox {
+            display: flex;
+        }
+
+        .CSZC{
+
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            width: 250px;
+            height:25px;
+            padding-top: 5px;
+            padding-left: 10px;
+            background-color: white;
+            margin-top: 0px;
+            color: rgb(0, 0, 0);
+            margin-bottom: 20px;
+
+        }
+
+        .CSZS{
+
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            width: 160px;
+            height:25px;
+            padding-top: 5px;
+            padding-left: 10px;
+            background-color: white;
+            margin-top: 0px;
+            color: rgb(0, 0, 0);
+            margin-bottom: 20px;
+            margin-left: 18px;
+
+        }
+
+        .CSZZ{
+
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            width: 117px;
+            height:25px;
+            padding-top: 5px;
+            padding-left: 10px;
+            background-color: white;
+            margin-top: 0px;
+            color: rgb(166, 160, 160);
+            margin-bottom: 20px;
+            margin-left: 20px;
+           
+        }
+
+
+
+        ul{
+
+            list-style: none;
+        }
+
+        .cart ul li {
+
+            border: 1px solid rgb(166, 160, 160);
+            background-color: white;
+            width: 250px;
+            padding: 5px;
+            
+        }
+
+        .right {
+            float:right;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .chbx1{
+
+            margin-top: 20px;
+
+            display: flex;
+        }
+      
+
+        .bx1 {
+
+            border: 1px solid gray;
+            width:13px;
+            height:13px;
+            border-radius: 5px;
+            margin-left: 275px;
+            margin-right: 10px;
+            background-color: white;
+            
+        }
+
+        .chbx2{
+
+            display: flex;
+
+            margin-bottom: 100px;
+        }
+
+
+        .bx2 {
+
+            border: 1px solid gray;
+            width:13px;
+            height:13px;
+            border-radius: 5px;
+            margin-left: 275px;
+            margin-right: 10px;
+            background-color: white;
+
+        }
+
+        .type1 {
+
+            margin-top: 25px;
+
+            display: flex;
+
+        }
+
+        .cc{
+            border: 1px solid gray;
+            width:13px;
+            height:13px;
+            border-radius: 13px;
+            margin-left: 275px;
+            margin-right: 10px;
+            background-color: white;
+        }
+
+        .type2 {
+
+            
+
+            display: flex;
+
+        }
+
+        .dc{
+            border: 1px solid gray;
+            width:13px;
+            height:13px;
+            border-radius: 13px;
+            margin-left: 275px;
+            margin-right: 10px;
+            background-color: white;
+        }
+
+        .type3 {
+
+            
+
+            display: flex;
+
+            margin-bottom: 25px;
+
+        }
+
+        .pp{
+            border: 1px solid gray;
+            width:13px;
+            height:13px;
+            border-radius: 13px;
+            margin-left: 275px;
+            margin-right: 10px;
+            background-color: white;
+        }
+
+        .info{
+
+            margin-left: 275px;
+            margin-bottom: 25px;
+        }
+
+        .infobx{
+
+            display: flex;
+        }
+
+        .info span{
+
+            margin-left: 225px;
+
+        }
+
+        .nbx{
+
+            background-color: white;
+            border:1px solid lightgray;
+            border-radius: 5px;
+            height: 25px;
+            width: 275px;
+            padding-top: 5px;
+            margin-top: 5px;
+
+        }
+
+        .numbx{
+
+            background-color: white;
+            border:1px solid lightgray;
+            border-radius: 5px;
+            height: 25px;
+            width: 275px;
+            margin-left: 47px;
+            padding-top: 5px;
+            margin-top: 5px;
+
+        }
+
+        .card{
+            display: flex;
+        }
+
+        .exbx{
+
+            background-color: white;
+            border:1px solid lightgray;
+            border-radius: 5px;
+            height: 25px;
+            width: 125px;
+            padding-top: 5px;
+            margin-top: 5px;
+
+        }
+
+        .cvv{
+
+            background-color: white;
+            border:1px solid lightgray;
+            border-radius: 5px;
+            height: 25px;
+            width: 125px;
+            margin-left: 45px;
+            padding-top: 5px;
+            margin-top: 5px;
+
+        }
+
+        .out{
+
+            border: 1px solid rgb(13, 100, 220);
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            width: 600px;
+            height: 30px;
+            background-color: rgb(13, 100, 220);
+            margin-left: 275px;
+            font-size: 25px;
+            padding: 5px 0px 0px 0px;
+        }
+
+        img {
+                width:10%;
+                height:auto;
+            }
+
+        
+
+
+    </style>
+
+    <body>
+
+        <!-- logo -->
+
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/HGU-Emblem-eng2.png" alt="Centered Image">
+          </div>
+         
+        <!-- top content -->
+
+        <div class="toptxt">
+
+            <h1>Checkout form</h1>
+
+            <span>Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</span>
+        
+        </div>
+        <!-- billing address-->
+
+        <div class="Mainpart">
+
+            <div class="Billing">
+
+                <h2> Billing address</h2>
+
+                <div class="name">
+
+                    First name
+
+                    <span> Last name</span>
+
+                    <div class="enternamebox" >
+
+                        <div class="namebox1"> </div>
+                        <div class="namebox2"> </div>
+
+                    </div>
+
+                </div>
+
+                <div class="Un">
+
+                    <p> Username </p>
+
+                    <div class="Unbox">
+
+                        <span>Username</span>
+
+                    </div>
+
+                </div>
+
+                <div class="Email">
+
+                    <span> Email <span style="color: gray;">(optional)</span></span> 
+
+                    <div class="Emailbox">
+                        <span>email@example.com</span>
+                    </div>
+
+                </div>
+
+                <div class="Address">
+
+                    <span> Address </span>
+
+                    <div class="Addressbox"> <span> 1234 Main St </span> </div>
+
+                </div>
+
+                <div class="Address">
+
+                    <span> Address 2 <span style="color: rgb(166, 160, 160);">(optional)</span> </span>
+
+                    <div class="Addressbox2"> <span> Apartment or suite </span> </div>
+
+                </div>
+
+                <div class="CSZ">
+
+                    Country <span style="margin-left: 225px;"> State </span> <span style="margin-left: 150px;"> Zip </span>
+
+                    <div class="CSZbox">
+
+                        <div class="CSZC"> Choose... </div>
+                        <div class="CSZS"> Choose... </div>
+                        <div class="CSZZ">  </div>
+                        
+
+                    </div>
+
+                </div>
+ 
+
+            </div>
+
+            <div class="cart">
+
+                <span style="color: rgb(70, 91, 245); font-size: 25px; margin-left: 40px;">Your cart</span>
+
+                <ul>
+
+                    <li>Product name <span style="color: gray; text-align: right;"> </span> <span class="right">5$</span><br> <span style="color: gray; font-size: 13px; text-align: start;">Brief description</span> </li>
+                    <li>second product <span style="color: gray; text-align: right;"> </span> <span class="right">10$</span><br> <span style="color: gray; font-size: 13px; text-align: start;">Brief description</span> </li>
+                    <li>third item <span style="color: gray; text-align: right;"> </span> <span class="right">3$</span><br> <span style="color: gray; font-size: 13px; text-align: start;">Brief description</span> </li>
+                    <li><span style="color: green; text-align: right;">Promo code  </span></span> <span class="right">-5$</span><br> <span style="color: green; font-size: 13px; text-align: start;">EXAMPLECODE</span> </li>
+                    <li>Total (USD) <span style="color: black; text-align: right;"> </span> <span class="right"><b>13$</b></span></li>
+                </ul>
+
+                <div class="code">
+
+                    
+                </div>
+            </div>
+        </div>
+        <!-- your cart-->
+        <!-- shipping -->
+
+        <div class="ship">
+
+            <div class="chbx1">
+                <div class="bx1"></div>
+                <span>Shipping address is the same as my billing address</span>
+            </div>
+
+            <div class="chbx2">
+                <div class="bx2"></div>
+                <div class="txt2"><span>Save this information for next time</span></div>
+            </div>
+
+        </div>
+        <!-- payment -->
+
+        <div class="pay">
+
+            <h1><span style="margin-left: 275px;">Payment</span></h1>
+            <div class="type1">
+                <div class="cc"></div>
+                Credit card
+                
+            </div>
+            <div class="type2">
+                <div class="dc"></div>
+                Debit card
+            </div>
+            <div class="type3">
+                <div class="pp"></div>
+                Paypal
+            </div>
+
+
+        </div>
+        <!-- card -->
+
+        <div class="info">
+            Name on card <span> Credit card number</span>
+            <div class="infobx">
+                <div class="nbx"></div>
+                <div class="numbx"></div>
+            </div>
+            <span style="color: gray; margin-left: 0px;">Full name as displayed on card</span><br><br>
+
+            Expiration <span style="margin-left: 100px;">CVV</span>
+            <div class="card">
+                <div class="exbx"></div>
+                <div class="cvv"></div>
+            </div>
+        </div>
+        <!-- check out -->
+
+        <div class="out">
+            Continue to checkout
+        </div>
+
+        <!---->
+
+
+    </body>
+
+</html>
